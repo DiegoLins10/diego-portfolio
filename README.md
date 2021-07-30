@@ -1,4 +1,4 @@
-## Projeto - Responsive portfolio Débora Cecília
+## Projeto - Responsive portfolio Diego Lins
 
 ## Desenvolvedor
 - Diego Fernandes Lins
