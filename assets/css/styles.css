@@ -765,6 +765,7 @@ button{
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    border: 1px solid black
 }
 
 .portfolio__title{
