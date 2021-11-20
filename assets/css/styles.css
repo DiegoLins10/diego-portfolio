@@ -118,6 +118,17 @@ body{
     color: var(--text-color);
 }
 
+#google_translate_element {
+    display: none;
+}
+.goog-te-banner-frame {
+    display: none !important;
+}
+body {
+    position: static !important;
+    top: 0 !important;
+}
+
 h1,h2,h3,h4{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
