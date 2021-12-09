@@ -1,13 +1,15 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
-    navClose =  document.getElementById('nav-close')
+    navClose =  document.getElementById('nav-close'),
+    navIdioma = document.getElementById('idioma') //seleciona o elemento
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
+        navIdioma.classList.add('idiomaClose') //adiciona a tag css idiomaClose no html quando clicka no botao
     })
 }
 
@@ -16,6 +18,7 @@ if(navToggle){
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
+        navIdioma.classList.remove('idiomaClose') // remove a tag css idiomaclose
     })
 }
 
@@ -23,9 +26,11 @@ if(navClose){
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+    const navMenu = document.getElementById('nav-menu'),
+    navIdioma = document.getElementById('idioma')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
+    navIdioma.classList.remove('idiomaClose')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
