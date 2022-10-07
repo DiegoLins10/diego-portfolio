@@ -7,7 +7,7 @@
 Este projeto tem como objetivo desenvolver um portofolio website totalmente responsivo, utilizando Html, CSS(Grid, Flexbox), Variables Css, JavaScript DOM.
 
 ## Amostra da página web 🔭
-- https://deboraportifolio.netlify.app/
+- https://diegolinsportfolio.netlify.app/
 - Essa página foi hospedada em um dominio gratuito de uma plataforma baseada em Git chamada netlify.
 
 ## Tecnologias
