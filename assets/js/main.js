@@ -1,15 +1,13 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+﻿/*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
-    navClose =  document.getElementById('nav-close'),
-    navIdioma = document.getElementById('idioma') //seleciona o elemento
+    navClose =  document.getElementById('nav-close')
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
-        navIdioma.classList.add('idiomaClose') //adiciona a tag css idiomaClose no html quando clicka no botao
     })
 }
 
@@ -18,7 +16,6 @@ if(navToggle){
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
-        navIdioma.classList.remove('idiomaClose') // remove a tag css idiomaclose
     })
 }
 
@@ -26,11 +23,9 @@ if(navClose){
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu'),
-    navIdioma = document.getElementById('idioma')
+    const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
-    navIdioma.classList.remove('idiomaClose')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -212,51 +207,4 @@ Email.send({
   message => alert(message)
 );
 
-/*==================== TRANSLATE ====================*/ 
-var comboGoogleTradutor = null; //Varialvel global
-    
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                //pageLanguage: 'en',
-                includedLanguages: 'pt,en',
-                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-            }, 'google_translate_element');
-    
-            comboGoogleTradutor = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
-        }
-    
-        function changeEvent(el) {
-            if (el.fireEvent) {
-                el.fireEvent('onchange');
-            } else {
-                var evObj = document.createEvent("HTMLEvents");
-    
-                evObj.initEvent("change", false, true);
-                el.dispatchEvent(evObj);
-            }
-        }
-    
-        function trocarIdioma(sigla) {
-            if (comboGoogleTradutor) {
-                comboGoogleTradutor.value = sigla;
-                changeEvent(comboGoogleTradutor);//Dispara a troca
-            }
-        }
-            
 
-        function Botao1(botao) {
-            //alert("função pt");
-            trocarIdioma('pt');
-            botao.setAttribute("onclick","Botao2(this);");
-            let img = document.querySelector('#theme-button2');
-            img.setAttribute("src","assets/img/br.png");
-          }
-          
-        function Botao2(botao) {
-            //alert("função en");
-            trocarIdioma('en');           
-            botao.setAttribute("onclick","Botao1(this);");
-            let img2 = document.querySelector('#theme-button2');
-            img2.setAttribute("src","assets/img/en.png");               
-          }
-  
