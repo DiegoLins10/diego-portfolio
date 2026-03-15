@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,14 +14,13 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Diego Lins Portfolio Website</title>
+    <title>Portfólio Diego Lins</title>
 
     <link rel="shortcut icon" href="assets/img/D_black.png">
 
 </head>
 
 <body>
-    <div id="google_translate_element" class="boxTradutor"></div>
 
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
@@ -31,32 +30,37 @@
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home page
+                            <i class="uil uil-estate nav__icon"></i> Início
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About me
+                            <i class="uil uil-user nav__icon"></i> Sobre
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-lock-alt nav__icon"></i> Skills
+                            <i class="uil uil-file-lock-alt nav__icon"></i> Habilidades
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Serviços
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experiences" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Experiencias
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            <i class="uil uil-scenery nav__icon"></i> Portfólio
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact
+                            <i class="uil uil-message nav__icon"></i> Contato
                         </a>
                     </li>
                 </ul>
@@ -71,12 +75,8 @@
                     <i class="uil uil-apps"></i>
                 </div>
             </div>
-            <div class="nav__btns" id="idioma">
-                <!-- Theme change button -->
-                <a onclick="Botao1(this)" style="
-                cursor: pointer;" id="idiomas"><img alt="en" src="assets\img\en.png" id="theme-button2" class="nav__item" style="
-                    height: 17px;
-                "></a>
+            <div class="nav__btns" id="bandeira-br" aria-label="Idioma: Português (Brasil)">
+                <img alt="pt-BR" src="assets/img/br.png" class="nav__item" style="height: 17px;" />
             </div>
 
         </nav>
@@ -116,17 +116,17 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x='30' y='-15' xlink:href="assets/img/diego-perfil.png" />
+                                <image class="home__blob-img" x='26' y='8' width='145' xlink:href="assets/img/diego-2026.png" />
                             </g>
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Diego</h1>
-                        <h3 class="home__subtitle">Software developer</h3>
-                        <p class="home__description">High level experience in software development knowledge,
-                            producing quality work.</p>
+                        <h1 class="home__title">Olá, eu sou Diego</h1>
+                        <h3 class="home__subtitle">Desenvolvedor de Software</h3>
+                        <p class="home__description">Experiência sólida em desenvolvimento de software, entregando
+                            soluções com qualidade.</p>
                         <a href="#contact" class="button button--flex">
-                            Contact me<i class="uil uil-message button__icon"></i>
+                            Fale comigo<i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
+                        <span class="home__scroll-name">Role para baixo</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
@@ -143,37 +143,38 @@
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-            <h2 class="section__title">About me</h2>
-            <span class="section__subtitle">My introduction</span>
+            <h2 class="section__title">Sobre</h2>
+            <span class="section__subtitle">Minha apresentação</span>
 
             <div class="about__container container grid">
                 <img src="assets/img/diego-about7.png" alt="" class="about__img">
 
                 <div class="about__data">
-                    <p class="about__description">Software developer, with extensive knowledge and years of
-                        experience, working in backend technologies like C# | ASP.NET Core | .NET
-                        and frontend technologies like typescript | Angular, delivering quality work.</p>
+                    <p class="about__description">Engenheiro de Software com 5 anos de experiência no desenvolvimento
+                        de sistemas críticos e escaláveis nos setores bancário e de seguros, atuando com
+                        microsserviços, mensageria e cloud AWS. Forte atuação em .NET e Java, com foco em
+                        performance, observabilidade e qualidade de software.</p>
 
                     <div class="about__info">
                         <div>
                             <span class="about__info-title">05+</span>
-                            <span class="about__info-name">Years <br> experience</span>
+                            <span class="about__info-name">Anos de <br> experiência</span>
                         </div>
 
                         <div>
                             <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Completed <br> project</span>
+                            <span class="about__info-name">Projetos <br> concluídos</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">01+</span>
-                            <span class="about__info-name">Companies <br> worked</span>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Empresas <br> onde atuei</span>
                         </div>
                     </div>
 
                     <div class="about__buttons">
-                        <a download="" href="assets/pdf/DiegoLins CV - 20-03-2024.pdf" class="button button--flex">
-                            Dowload CV <i class="uil uil-download-alt button__icon"></i>
+                        <a download="" href="assets/pdf/Diego_Fernandes_Lins_Software_Engineer.pdf" class="button button--flex">
+                            Baixar CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -182,8 +183,8 @@
 
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
+            <h2 class="section__title">Habilidades</h2>
+            <span class="section__subtitle">Meu nível técnico</span>
 
             <div class="skills__container container grid">
                 <div>
@@ -193,7 +194,7 @@
                             <i class="uil uil-server-network skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Backend developer</h1>
+                                <h1 class="skills__title">Desenvolvedor Backend</h1>
                                 <span class="skills__subtitle">More than 5 years</span>
                             </div>
 
@@ -240,16 +241,34 @@
                                     <span class="skills__percentage skills__python"></span>
                                 </div>
                             </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">ASP.NET Core</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Golang</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!--==================== SKILLS 2 ====================-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>                           
+                            <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Frontend developer</h1>
+                                <h1 class="skills__title">Desenvolvedor Frontend</h1>
                                 <span class="skills__subtitle">More than 4 years</span>
                             </div>
 
@@ -304,13 +323,13 @@
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-database skills__icon"></i>
-                            
+
 
                             <div>
                                 <h1 class="skills__title">Data-base</h1>
                                 <span class="skills__subtitle">More than 4 years</span>
                             </div>
-                            
+
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
@@ -353,10 +372,37 @@
                                     <span class="skills__percentage skills__sql"></span>
                                 </div>
                             </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">DynamoDB</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">RDS</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Redis</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                     <!--==================== SKILLS 4 ====================-->
-                     <div class="skills__content skills__close">
+                    <!--==================== SKILLS 4 ====================-->
+                    <div class="skills__content skills__close">
                         <div class="skills__header">
                             <!--<i class="uil uil-swatchbook skills__icon"></i>-->
                             <i class="uil uil-wrench skills__icon"></i>
@@ -444,27 +490,97 @@
                                     <span class="skills__percentage skills__flutter"></span>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
+                    </div>
+                    <!--==================== SKILLS 5 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-cloud skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Nuvem AWS</h1>
+                                <span class="skills__subtitle">Experiência prática em produção</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Lambda</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__boot"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SQS / SNS</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flutter"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Step Functions</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flutter"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">API Gateway</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flutter"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">DynamoDB / RDS / S3</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CloudWatch / ECS / EC2</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flutter"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+        <section class="qualification section" id="experiences">
+            <h2 class="section__title">Formação e Experiência</h2>
+            <span class="section__subtitle">Minha trajetória</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
                     <div class="qualification__button button--flex" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
+                        Formação
                     </div>
 
                     <div class="qualification__button button--flex qualification__active" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
+                        Experiência
                     </div>
                 </div>
 
@@ -474,8 +590,9 @@
                         <!--==================== QUALIFICATION 1 ====================-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Analysis and Systems Development</h3>
-                                <span class="qualification__subtitle">Fatec Ferraz de Vasconcelos - University São Paulo, Brazil</span>
+                                <h3 class="qualification__title">Análise e Desenvolvimento de Sistemas</h3>
+                                <span class="qualification__subtitle">Fatec Ferraz de Vasconcelos - Universidade São
+                                    Paulo, Brasil</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2019 - 2022
@@ -488,7 +605,7 @@
                             </div>
                         </div>
                         <!--==================== QUALIFICATION 2 ====================-->
-                       <!-- <div class="qualification__data">
+                        <!-- <div class="qualification__data">
                             <div></div>
 
                             <div>
@@ -507,7 +624,7 @@
                         </div> -->
 
                         <!--==================== QUALIFICATION 3 ====================-->
-                       <!-- <div class="qualification__data">
+                        <!-- <div class="qualification__data">
 
 
                             <div>
@@ -532,9 +649,9 @@
                             <div>
                                 <!--<span class="qualification__rounder"></span>-->
                                 <span class="qualification__line"></span>
-                            </div> 
+                            </div>
 
-                           <!-- <div>
+                            <!-- <div>
                                 <h3 class="qualification__title">CNA</h3>
                                 <span class="qualification__subtitle">Peru - Institute</span>
                                 <div class="qualification__calendar">
@@ -542,18 +659,19 @@
                                     2019 - 2021
                                 </div> 
                             </div>-->
-                        </div> 
+                        </div>
                     </div>
                     <!--==================== QUALIFICATION CONTENT 2 ====================-->
                     <div class="qualification__content qualification__active" data-content id="work">
                         <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">                           
+                        <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">IT Intern</h3>
-                                <span class="qualification__subtitle" translate="no">It’S Seg Corretora de Seguros - São paulo, Brazil</span>
+                                <h3 class="qualification__title">Analista de Desenvolvimento de Sistemas Júnior</h3>
+                                <span class="qualification__subtitle" translate="no">Acrisure Brasil - São Paulo,
+                                    Brasil</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    02-2021 - 12-2021
+                                    12/2021 - 07/2023
                                 </div>
                             </div>
 
@@ -572,23 +690,25 @@
                             </div>
 
                             <div>
-                                <h3 class="qualification__title">Junior Software Developer</h3>
-                                <span class="qualification__subtitle" translate="no">It’S Seg Corretora de Seguros - São paulo, Brazil</span>
+                                <h3 class="qualification__title">Analista de Desenvolvimento de Sistemas Pleno</h3>
+                                <span class="qualification__subtitle" translate="no">Acrisure Brasil - São Paulo,
+                                    Brasil</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    12-2021 - 06-2023
+                                    07/2023 - 06/2024
                                 </div>
                             </div>
                         </div>
 
                         <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">                           
+                        <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Software Developer</h3>
-                                <span class="qualification__subtitle" translate="no">It’S Seg Corretora de Seguros - São paulo, Brazil</span>
+                                <h3 class="qualification__title">Engenheiro de Software Pleno</h3>
+                                <span class="qualification__subtitle" translate="no">IBM (cliente Itaú Unibanco) - São
+                                    Paulo, Brasil</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    06-2023 - NOW
+                                    06/2024 - Atual
                                 </div>
                             </div>
 
@@ -606,41 +726,41 @@
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
-            <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What I offer</span>
+            <h2 class="section__title">Serviços</h2>
+            <span class="section__subtitle">O que eu ofereço</span>
 
             <div class="services__container container grid">
                 <!--==================== SERVICES 1 ====================-->
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Backend <br> Software</h3>
+                        <h3 class="services__title">Backend <br> Desenvolvimento</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
-                        View More
+                        Ver mais
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend <br> Software</h4>
+                            <h4 class="services__modal-title">Backend <br> Desenvolvimento</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop new features with C# and Java.</p>
+                                    <p>Desenvolvimento de novas funcionalidades com C# e Java.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Rest API development with ASP NET CORE and Spring boot.</p>
+                                    <p>Desenvolvimento de APIs REST com ASP.NET Core e Spring Boot.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Version control Git with Azure devOps and github.</p>
+                                    <p>Controle de versão com Git, Azure DevOps e GitHub.</p>
                                 </li>
-                               <!-- <li class="services__modal-service">
+                                <!-- <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>kk.</p>
                                 </li>-->
@@ -653,35 +773,35 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-arrow services__icon"></i>
-                        <h3 class="services__title">Frontend <br> Developer</h3>
+                        <h3 class="services__title">Frontend <br> Desenvolvimento</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
-                        View More
+                        Ver mais
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <h4 class="services__modal-title">Frontend <br> Desenvolvimento</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
+                                    <p>Desenvolvimento de interfaces de usuário.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development with Bootstrap.</p>
+                                    <p>Desenvolvimento de páginas web com Bootstrap.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create element interactions with JavaScript.</p>
+                                    <p>Criação de interações com JavaScript.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop system with Angular.</p>
+                                    <p>Desenvolvimento de sistemas com Angular.</p>
                                 </li>
                             </ul>
                         </div>
@@ -692,36 +812,36 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-pen services__icon"></i>
-                        <h3 class="services__title">Database <br> Developer</h3>
+                        <h3 class="services__title">Banco de Dados <br> Desenvolvimento</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
-                        View More
+                        Ver mais
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Database <br> Developer</h4>
+                            <h4 class="services__modal-title">Banco de Dados <br> Desenvolvimento</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>development of new tables.</p>
+                                    <p>Criação de novas tabelas.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>query development.</p>
+                                    <p>Desenvolvimento de consultas SQL.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>knowledge of online database like Sql server on devops.</p>
+                                    <p>Conhecimento em bancos online, como SQL Server no DevOps.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>database data analysis.</p>
-                                </li> 
+                                    <p>Análise de dados em banco de dados.</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -731,20 +851,124 @@
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <h2 class="section__title">Portfólio</h2>
+            <span class="section__subtitle">Trabalhos mais recentes</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO PROFISSIONAL 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/itau.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Configurador de Ofertas e Produtos de Renda Fixa</h3>
+                            <p class="portfolio__description">Sistema responsável pela configuração e publicação de
+                                CDBs e letras de renda fixa exibidos nos canais do banco, com evolução contínua de
+                                regras de negócio, microsserviços e APIs REST.</p>
+                            <a href="//www.linkedin.com/in/diego-fernandes-lins-b24698195/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Contexto profissional
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO PROFISSIONAL 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/itau.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Sistema de Câmbio</h3>
+                            <p class="portfolio__description">Sistema responsável pelas operações de câmbio do banco,
+                                com foco em sustentação e evolução de serviços críticos de alta disponibilidade para os
+                                canais do Itaú Unibanco.</p>
+                            <a href="//www.linkedin.com/in/diego-fernandes-lins-b24698195/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Contexto profissional
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO PROFISSIONAL 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/acrisure.jpeg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Sistema de Benefícios Acrisure</h3>
+                            <p class="portfolio__description">Desenvolvimento, manutenção e publicações em produção da
+                                plataforma de benefícios corporativos com .NET, Angular, SQL Server, Hangfire e CI/CD.
+                            </p>
+                            <a href="//www.linkedin.com/in/diego-fernandes-lins-b24698195/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Contexto profissional
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO PROFISSIONAL 4 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="https://opengraph.githubassets.com/1/DiegoLins10/lambda-process-product-catalog" alt=""
+                            class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Lambda Process Product Catalog</h3>
+                            <p class="portfolio__description">Processamento de catálogo de produtos com AWS Lambda,
+                                com foco em orquestração, performance e processamento assíncrono.</p>
+                            <a href="https://github.com/DiegoLins10/lambda-process-product-catalog" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO PROFISSIONAL 5 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="https://opengraph.githubassets.com/1/DiegoLins10/client-integration-api" alt=""
+                            class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Client Integration API</h3>
+                            <p class="portfolio__description">API de integração de clientes com foco em padronização de
+                                contratos, comunicação entre sistemas e confiabilidade de integrações.</p>
+                            <a href="https://github.com/DiegoLins10/client-integration-api" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO PROFISSIONAL 6 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="https://opengraph.githubassets.com/1/DiegoLins10/currency-exchange-api" alt=""
+                            class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Currency Exchange API</h3>
+                            <p class="portfolio__description">API para operações de câmbio e consulta de taxas,
+                                construída com foco em arquitetura limpa, regras de negócio e integração segura.</p>
+                            <a href="https://github.com/DiegoLins10/currency-exchange-api" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
                     <!--==================== PORTFOLIO 1 ====================-->
                     <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/pingu login.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Pingu CheckIn - Reservation System</h3>
-                            <p class="portfolio__description">A hotel system built with Angular, C# .Net and SQL Server.</p>
-                            <a href="https://github.com/DiegoLins10/PinguCheckIn" target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <p class="portfolio__description">Sistema de hotelaria construído com Angular, C# .NET e SQL
+                                Server.</p>
+                            <a href="https://github.com/DiegoLins10/PinguCheckIn" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -755,9 +979,11 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Employee Management Portal</h3>
-                            <p class="portfolio__description">A system to manage a company's employees and department using Angular 10, .NET Core Web API & SQL Server.</p>
-                            <a href="https://github.com/DiegoLins10/Department" target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <p class="portfolio__description">Sistema para gestão de colaboradores e departamentos com
+                                Angular 10, .NET Core Web API e SQL Server.</p>
+                            <a href="https://github.com/DiegoLins10/Department" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -767,10 +993,12 @@
                         <img src="assets/img/chatbot.jpeg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Chatbot with my dog joey</h3>
-                            <p class="portfolio__description">An application where I created a chatbot with flutter that would be my dog talking through messages.</p>
-                            <a href="https://github.com/DiegoLins10/Department" target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <h3 class="portfolio__title">Chatbot com meu cachorro Joey</h3>
+                            <p class="portfolio__description">Aplicação em Flutter com chatbot simulando conversas do
+                                meu cachorro por mensagens.</p>
+                            <a href="https://github.com/DiegoLins10/Department" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -782,9 +1010,11 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Restaurant Management System</h3>
-                            <p class="portfolio__description">A CRUD system representing a restaurant application using a Web API, Angular 10, and SQL Server.</p>
-                            <a href="https://github.com/DiegoLins10/RestaurantAPI" target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <p class="portfolio__description">Sistema CRUD para gestão de restaurante usando Web API,
+                                Angular 10 e SQL Server.</p>
+                            <a href="https://github.com/DiegoLins10/RestaurantAPI" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -796,37 +1026,43 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Loan Control System</h3>
-                            <p class="portfolio__description">A system for a library where the user can login and add students, add books and borrow books.</p>
-                            <a href="https://github.com/DiegoLins10/ffvgrupo4"  target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <p class="portfolio__description">Sistema de biblioteca com login, cadastro de alunos e
+                                livros e controle de empréstimos.</p>
+                            <a href="https://github.com/DiegoLins10/ffvgrupo4" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
 
-                     <!--==================== PORTFOLIO 4 ====================-->
-                     <div class="portfolio__content grid swiper-slide">
+                    <!--==================== PORTFOLIO 4 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/xadrez.jpg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Chess game</h3>
-                            <p class="portfolio__description">A chess game developed with C# .Net to simulate a chess game, in this project development techniques such as inheritance, polymorphism, enums and object composition were used.</p>
-                            <a href="https://github.com/DiegoLins10/Xadrez"  target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <p class="portfolio__description">Jogo de xadrez desenvolvido em C# .NET para simular
+                                partidas, aplicando herança, polimorfismo, enums e composição de objetos.</p>
+                            <a href="https://github.com/DiegoLins10/Xadrez" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
 
-                      <!--==================== PORTFOLIO 5 ====================-->
-                      <div class="portfolio__content grid swiper-slide">
+                    <!--==================== PORTFOLIO 5 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/app.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Currency converter app</h3>
-                            <p class="portfolio__description">A mobile app using flutter that fetches currency values ​​via API and returns by converting the values ​​to other currencies.</p>
-                            <a href="https://github.com/DiegoLins10/Conversor"  target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <p class="portfolio__description">Aplicativo mobile em Flutter que consulta cotações via API
+                                e converte valores entre moedas.</p>
+                            <a href="https://github.com/DiegoLins10/Conversor" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Ver projeto
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -852,10 +1088,10 @@
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
-                        <h2 class="project__title">Do you have a new project or opportunity?</h2>
-                        <p class="project__description">Contact me now and tell me more about your new project.</p>
+                        <h2 class="project__title">Você tem um novo projeto ou oportunidade?</h2>
+                        <p class="project__description">Entre em contato e me conte mais sobre seu novo projeto.</p>
                         <a href="#contact" class="button button--flex button--white">
-                            Contact me
+                            Fale comigo
                             <i class="uil uil-message project__icon button__icon"></i>
                         </a>
                     </div>
@@ -868,8 +1104,8 @@
 
         <!--==================== TESTIMONIAL ====================-->
         <section class="testimonial section">
-            <h2 class="section__title">Testimonial</h2>
-            <span class="section__subtitle">My friends saying</span>
+            <h2 class="section__title">Depoimentos</h2>
+            <span class="section__subtitle">O que dizem sobre mim</span>
 
             <div class="testimonial__container container swiper-container">
                 <div class="swiper-wrapper">
@@ -894,9 +1130,12 @@
                             </div>
                         </div>
 
-                        <p class="testimonial__description">Diego é um profissional dedicado, empenhado e que está sempre procurando 
-                            trazer as mais diversas inovações, possuí uma excelente visão macro que o auxilia nos desenvolvimentos 
-                            trazendo soluções rápidas e efetivas alem de se dispor a ajudar a todos da melhor forma e até mesmo dar 
+                        <p class="testimonial__description">Diego é um profissional dedicado, empenhado e que está
+                            sempre procurando
+                            trazer as mais diversas inovações, possui uma excelente visão macro que o auxilia nos
+                            desenvolvimentos
+                            trazendo soluções rápidas e efetivas, além de se dispor a ajudar a todos da melhor forma e
+                            até mesmo dar
                             bons conselhos, é uma pessoa impecável.
                         </p>
                     </div>
@@ -921,9 +1160,11 @@
                             </div>
                         </div>
 
-                        <p class="testimonial__description">O Diego é um profissional curioso, inteligente, educado, analítico e 
-                            determinado. Busca sempre resolver os problemas de maneira eficaz, com muita atenção e 
-                            com muita responsabilidade. Tenho excelentes memórias de quando trabalhamos juntos e não hesito 
+                        <p class="testimonial__description">O Diego é um profissional curioso, inteligente, educado,
+                            analítico e
+                            determinado. Busca sempre resolver os problemas de maneira eficaz, com muita atenção e
+                            com muita responsabilidade. Tenho excelentes memórias de quando trabalhamos juntos e não
+                            hesito
                             em recomendar o Diego para qualquer função do universo da T.I
                         </p>
                     </div>
@@ -949,8 +1190,9 @@
                         </div>
 
                         <p class="testimonial__description">O Diego é extremamente dedicado e inteligente,
-                             sempre se esforçando para dar o seu melhor em tudo o que faz, entregando projetos de alta qualidade.
-                             Além disso, está sempre disponível para conversar, ajudar e dar sugestões.
+                            sempre se esforçando para dar o seu melhor em tudo o que faz, entregando projetos de alta
+                            qualidade.
+                            Além disso, está sempre disponível para conversar, ajudar e dar sugestões.
                         </p>
                     </div>
                 </div>
@@ -963,8 +1205,8 @@
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
-            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contato</h2>
+            <span class="section__subtitle">Entre em contato</span>
 
             <div class="contact__container container grid">
                 <div>
@@ -972,7 +1214,7 @@
                         <i class="uil uil-phone contact__icon"></i>
 
                         <div>
-                            <h3 class="contact__title">Call me</h3>
+                            <h3 class="contact__title">Telefone</h3>
                             <span class="contact__subtitle">11 98754 - 9239</span>
                         </div>
                     </div>
@@ -990,8 +1232,8 @@
                         <i class="uil uil-map-marker contact__icon"></i>
 
                         <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">São paulo - SP - Brazil</span>
+                            <h3 class="contact__title">Localização</h3>
+                            <span class="contact__subtitle">São Paulo - SP - Brasil</span>
                         </div>
                     </div>
                 </div>
@@ -1001,7 +1243,7 @@
                     <input type="hidden" name="redirectTo" value="//diegolinsportfolio.netlify.app/#contact">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
+                            <label for="" class="contact__label">Nome</label>
                             <input type="text" class="contact__input" name="name" required>
                         </div>
                         <div class="contact__content">
@@ -1010,11 +1252,11 @@
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
+                        <label for="" class="contact__label">Projeto</label>
                         <input type="text" class="contact__input" name="subject" required>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
+                        <label for="" class="contact__label">Mensagem</label>
                         <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
                     </div>
 
@@ -1024,7 +1266,7 @@
                              font-size: 0.95rem;
                              font-weight: bold;
                              ">
-                            Send Message
+                            Enviar mensagem
                             <i class="uil uil-message button__icon"></i>
                         </button>
                     </div>
@@ -1039,23 +1281,24 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Diego</h1>
-                    <span class="footer__subtitle">Software Developer</span>
+                    <span class="footer__subtitle">Desenvolvedor de Software</span>
                 </div>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#services" class="footer__link">Services</a>
+                        <a href="#services" class="footer__link">Serviços</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                        <a href="#portfolio" class="footer__link">Portfólio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer__link">Contact</a>
+                        <a href="#contact" class="footer__link">Contato</a>
                     </li>
                 </ul>
 
                 <div class="footer__socials">
-                    <a href="//www.linkedin.com/in/diego-fernandes-lins-b24698195/" target="_blank" class="footer__social">
+                    <a href="//www.linkedin.com/in/diego-fernandes-lins-b24698195/" target="_blank"
+                        class="footer__social">
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
 
@@ -1070,12 +1313,10 @@
             </div>
 
             <p class="footer__copy">
-                Copyright © 2021. Created by <a class="footer__me" href="https://github.com/DiegoLins10" rel="designer">
+                Copyright © 2021. Criado por <a class="footer__me" href="https://github.com/DiegoLins10" rel="designer">
                     Diego Lins</a></p>
         </div>
     </footer>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
